@@ -2,7 +2,7 @@ site_name: Junzexu's Docs
 site_author: Junzexu
 theme: readthedocs
 markdown_extensions: [fenced_code, tables, toc, meta, footnotes, nl2br, smart_strong]
-extra_javascript: ['//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML', 'deps/jquery.min.js', 'deps/mathjax_config.js']
+extra_javascript: ['//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML', 'deps/jquery.min.js', 'deps/mathjax_config.js', 'deps/highlight.min.js', 'deps/highlight_proc.js']
 
 pages:
 - Home: index.md
