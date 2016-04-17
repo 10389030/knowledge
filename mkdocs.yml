@@ -1,9 +1,14 @@
 site_name: Junzexu's Docs
 site_author: Junzexu
 theme: readthedocs
+markdown_extensions: [fenced_code, tables, toc, meta, footnotes, nl2br, smart_strong]
+extra_javascript: ['http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML', 'deps/jquery.min.js', 'deps/mathjax_config.js']
 
 pages:
 - Home: index.md
-- About:
-    - How to Write: about/how_to_write.md
+- 数据库: database.md
+- 数学: math.md
+- 计算机语言:
+    - C/C++: cpp.md
+- 架构&设计: designed.md
 

@@ -1,0 +1,60 @@
+@media screen, 
+@media print {
+  .rst-content pre {
+    background-color: #f7f7f7;
+    border: 1px solid #eee;
+    padding: 0.5em 1em;
+    border-left: 0px;
+    border-right: 0px;
+  }
+
+  .rst-content code,
+  .rst-content pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+  }
+
+  .rst-content code {
+    padding: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(0,0,0,0.04);
+    border-radius: 3px;
+  }
+
+  .rst-content code:before,
+  .rst-content code:after {
+    letter-spacing: -0.2em;
+    content: "\00a0";
+  }
+
+  .rst-content pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+  }
+
+  .rst-content pre code {
+    display: inline;
+    max-width: initial;
+    padding: 0;
+    margin: 0;
+    overflow: initial;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+
+  .rst-content pre code:before,
+  .rst-content pre code:after {
+    content: normal;
+  }
+}
+
