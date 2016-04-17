@@ -1,0 +1,6 @@
+site_name: Junzexu's Docs
+site_author: Junzexu
+pages:
+- About:
+    - How to Write: about/how_to_write.md
+
