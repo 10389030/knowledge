@@ -12,12 +12,12 @@ print math.e ** 0.05 - 1
 
 ---
 ## 凹函数与Jensen不等式
-如果一个函数 $f$ 在实数轴上的某个区间$I$是凹函数，如果 $\forall x_1, x_2 \in I$, 有
+如果一个函数 $f$ 在实数轴上的某个区间$I$是凹函数，如果 $\forall x_1,x_2 \in I$, 有
 $$ f(\lambda x_1 + (1 - \lambda) x_2) \geq \lambda f(x_1) + (1 - \lambda) f(x_2), \forall \lambda \in [0, 1]  $$
 
 $$ \lambda x_1 + (1 - \lambda) x_2 = x_2 - \lambda (x_2 - x_2)$$
 
-设函数$f$为区间$I$上得凹函数, $p_i \in {[0, 1]}, i = 1, _{...}, n$, 且$\displaystyle \sum_{i=1}^{n} p_i = 1$, 则有:
+设函数$f$为区间$I$上得凹函数, $p_i\in{[0, 1]},i=1, _{...}, n$, 且$\displaystyle \sum_{i=1}^{n} p_i = 1$, 则有:
 
 $$ f(\sum_{i=1}^{n}p_i x_i) \geq \sum_{i=1}^{n} p_i f(x_i) $$
 

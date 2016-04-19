@@ -18,5 +18,10 @@ pages:
 - 数学: math.md
 - 计算机语言:
     - C/C++: cpp.md
+- Linux:
+    - 内核参数调优: kenel_improve.md
+    - 命令&工具: command_tools.md
 - 架构&设计: designed.md
+- 杂项: 
+    - 宏观经济: ecomomic.md
 
