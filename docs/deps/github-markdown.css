@@ -8,10 +8,37 @@
     border-right: 0px;
   }
 
+  .rst-content blockquote {
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding: 0 15px;
+    color: #777;
+    border-left: 4px solid #2980b9;
+  }
+
+
+  .rst-content blockquote>:first-child {
+    margin-top: 0;
+  }
+
+  .rst-content blockquote>:last-child {
+    margin-bottom: 0;
+  }
+
   .rst-content code,
   .rst-content pre {
     font-family: monospace, monospace;
     font-size: 1em;
+  }
+
+  .rst-content em {
+    color: #777;
+    font-size: 80%;
+  }
+
+  .rst-content strong{
+    color: #008080;
   }
 
   .rst-content code {

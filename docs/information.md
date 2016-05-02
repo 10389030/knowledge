@@ -1,26 +1,29 @@
-## 自然对数e的意义
-原文链接：http://www.ruanyifeng.com/blog/2011/07/mathematical_constant_e.html
-自然对数的数学表示
-$$ e =\lim_{n \to \infty} (1 + \frac{1}{n})^ n $$
-
-e自然对数代表的是自然增长的极限，例如银行的复利问题：假设年收益率为5%，那么一年后收益为，
-``` python
-import math
-print math.e ** 0.05 - 1
-```
-
-
----
 ## 凹函数与Jensen不等式
 如果一个函数 $f$ 在实数轴上的某个区间$I$是凹函数，如果 $\forall x_1,x_2 \in I$, 有
 $$ f(\lambda x_1 + (1 - \lambda) x_2) \geq \lambda f(x_1) + (1 - \lambda) f(x_2), \forall \lambda \in [0, 1]  $$
 
 $$ \lambda x_1 + (1 - \lambda) x_2 = x_2 - \lambda (x_2 - x_2)$$
 
-设函数$f$为区间$I$上得凹函数, $p_i\in{[0, 1]},i=1, _{...}, n$, 且$\displaystyle \sum_{i=1}^{n} p_i = 1$, 则有:
+设函数$f$为区间$I$上的凹函数$p_i\in{[0, 1]}, i = 1, {...}, n$,且$\displaystyle \sum_{i=1}^{n}p_i=1$
 
 $$ f(\sum_{i=1}^{n}p_i x_i) \geq \sum_{i=1}^{n} p_i f(x_i) $$
 
+---
+## 切比雪夫不等式
+设$X$为样本空间$S$上概率函数为$p$的的随机变量，如果$r$是一个正实数，那么
+$$ p(|X(s) - E(X)| \geq r) \leq \frac{V(X)}{r ^ 2}  $$
+
+*描述一个随机变量取值与期望之间的差距*
+
+证明：
+\begin{align}
+	V(X) &= \int\limits_{-\infty}^{+\infty}(X - E(X)) ^ 2 d P(X) \\\
+		 &\geq \int_{|E(X) - X| \geq r}(X - E(X)) ^ 2 d P(X) \\\
+		 &\geq \int_{|E(X) - X| \geq r}r ^ 2 d P(X) \\\
+	\frac{V(X)}{r ^ 2} &\geq \int_{|E(X) - X| \geq r} d P(X) = p(|E(X) - X| \geq r) \\\
+\end{align}
+
+**证明的关键步骤：展开**
 
 ---
 ##  熵
@@ -54,9 +57,3 @@ $$KL(P,Q) = \sum_{X}P(X)log\frac{P(X)}{Q(X)}$$
 *相关的有`信息不等式`、`Kullback-Leibler距离`*
 
 ---
-## 贝叶斯网
-+ 条件独立与联合概率分解
-+ 贝叶斯网的构建: 因果关系网
-+ 朴素贝叶斯模型 & TAN模型(优化朴素贝叶斯局部独立假设问题)
-+ 时序贝叶斯模型: HMM(隐马尔可夫模型) & 卡尔曼滤波器
-+ 贝叶斯推理计算：消元法(启发式算法改进：最大势, 最小缺边[经验最优])

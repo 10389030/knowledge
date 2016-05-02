@@ -1,32 +1,68 @@
-## 写作工具
-该文档基于工具[`MkDocs`](http://markdown-docs-zh.readthedocs.org/zh_CN/latest/)进行书写。
-
-### 安装小记录
-1. 安装`MKDocs`
-
-```
-pip install mkdoc
+#### MathJax
+[https://en.wikibooks.org/wiki/LaTeX/Mathematics#Symbols](https://en.wikibooks.org/wiki/LaTeX/Mathematics#Symbols)
+``` mathjax
+$$ e = \lim_{n \to \infty} (1 + \frac{1}{n}) ^ n $$
 ```
 
-2. 创建目录结构
+$$ e = \lim_{n \to \infty} (1 + \frac{1}{n}) ^ n $$_
 
+#### Graphviz
+[http://www.gravizo.com/#howto](http://www.gravizo.com/#howto)
+
+``` html
+<img src='http://g.gravizo.com/g?
+@startuml;
+
+(*) --> if "Some Test" then;
+	-->[true] "activity 1";
+
+	if "" then;
+	-> "activity 3" as a3;
+	else;
+	if "Other test" then;
+	-left-> "activity 5";
+	else;
+	--> "activity 6";
+	endif;
+	endif;
+
+	else;
+
+	->[false] "activity 2";
+
+	endif;
+
+	a3 --> if "last test" then;
+	--> "activity 7";
+	else;
+	-> "activity 8";
+	endif;
+@enduml 
+'/>
 ```
-.
-├── docs
-│   └── index.md
-├── mkdocs.yml
-```
 
-3. 基础配置
-mkdocs.yml
+<img src='http://g.gravizo.com/g?
+@startuml;
+(*) --> if "Some Test" then;
+	-->[true] "activity 1";
+	if "" then;
+	-> "activity 3" as a3;
+	else;
+	if "Other test" then;
+	-left-> "activity 5";
+	else;
+	--> "activity 6";
+	endif;
+	endif;
+	else;
+	->[false] "activity 2";
+	endif;
+	a3 --> if "last test" then;
+	--> "activity 7";
+	else;
+	-> "activity 8";
+	endif;
+@enduml 
+'/>
 
-``` yaml
-site_name: Junzexu's Docs
-site_author: Junzexu
-theme: readthedocs
-markdown_extensions: [fenced_code, tables, toc, meta, footnotes, nl2br]
-
-pages:
-- Home: index.md
-```
 
