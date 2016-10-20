@@ -37,8 +37,8 @@
     font-size: 80%;
   }
 
-  .rst-content strong{
-    color: #008080;
+  .rst-content strong {
+    color: #008080 !important;
   }
 
   .rst-content code {
@@ -82,6 +82,21 @@
   .rst-content pre code:before,
   .rst-content pre code:after {
     content: normal;
+  }
+
+  .rst-content dl:not(.docutils) {
+    display: inline-block;
+    margin: 6px 0;
+    line-height: normal;
+    background: #e7f2fa;
+    color: #2980B9;
+    border-top: solid 3px #6ab0de;
+    padding: 6px;
+    position: relative;
+  }
+
+  .rst-content dl:not(.docutils) dt {
+    border-top: solid 0px #6ab0de;
   }
 }
 

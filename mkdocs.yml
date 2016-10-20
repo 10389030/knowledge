@@ -1,7 +1,7 @@
 site_name: Junzexu's Docs
 site_author: Junzexu
 theme: readthedocs
-markdown_extensions: [fenced_code, tables, toc, meta, footnotes, smart_strong]
+markdown_extensions: [fenced_code, tables, toc, meta, footnotes, smart_strong, def_list]
 extra_javascript: 
     - //cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML
     - deps/mathjax_config.js
@@ -19,8 +19,10 @@ pages:
     - 数论: numbers.md
     - 信息学: information.md
     - 贝叶斯网络: bayes.md
+    - LDA: lda.md
 - 计算机语言:
     - C/C++: cpp.md
+    - Java: java.md
 - Linux:
     - 内核参数调优: kenel_improve.md
     - 命令&工具: command_tools.md

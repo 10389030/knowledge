@@ -14,3 +14,13 @@
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。  
 
 ---
+
+### Scipy
+numpy 提供高效便捷的N维度数组计算支持，面向数组编程。  
+matplotlib提供数据可视化。  
+```
+import numpy as np
+import matplotlib.pyplot as plt
+```
+
+
